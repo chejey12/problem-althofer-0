@@ -7,12 +7,12 @@
 - Default branch: `main`
 - Visibility: `public`
 - Canonical Problem: `problem:althofer-0`
-- ProblemContract SHA-256: `d01988d094f596f5f7e98810a60a46634e7f57bc8684d1f095ccf9ffaeb91553`
-- Problem lifecycle: `draft`
-- Problem admission: `preview_unadmitted`
+- ProblemContract SHA-256: `6a09e0e38d9740642925275a0032e4b27111c98c8e092ad78b3fec535e4b9148`
+- Problem lifecycle: `active`
+- Problem admission: `canonical_admitted`
 - Harness suite: `harness-source:web-research-full` `1.2.4`
 - Suite manifest SHA-256: `fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3`
-- Harness snapshot SHA-256: `97fc4a6776d53f003654cc9b981d9b5c685e51e62d45c382701d6c8cd2cdd690`
+- Harness snapshot SHA-256: `60689d2518474ff892ba299efa1caaf632529f4f1486c76741e707234d52e28d`
 - Channel: `chatgpt-web-github-issue-pr-writer`
 
 ## Required read order

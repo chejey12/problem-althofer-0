@@ -209,81 +209,86 @@ This file is generated from repository truth and bounded for the web channel. It
       "policy": "solution-admission-v1"
     },
     "aliases": [
-      "althofer-0",
-      "Collatz随机±1变体"
+      "althofer-0"
     ],
     "allowed_axioms": [
-      "none"
+      "classical-mathematics",
+      "source-explicit-definitions-only"
     ],
     "assumptions": [
-      "No mathematical claim is admitted from the bounty title alone.",
-      "Source status and award status are observations, not mathematical Results."
+      "The source offers EUR 300 for the first proof submitted by 2037-12-31.",
+      "Award amount, source status, repository state, and computational discovery are not mathematical Results."
     ],
     "constraints": {
       "allowed_adapters": [
-        "source-fidelity-review-v1"
+        "source-fidelity-review-v1",
+        "lean-obligation-v1"
       ],
       "allowed_methods": [
-        "discovery"
+        "discovery",
+        "derivation",
+        "computation",
+        "proof",
+        "formalization"
       ],
-      "max_attempts": 1,
+      "max_attempts": 20,
       "runtime": {
-        "max_output_bytes": 262144,
-        "max_retries": 1,
-        "max_transitions": 20,
-        "timeout_seconds": 300
+        "max_output_bytes": 5242880,
+        "max_retries": 3,
+        "max_transitions": 300,
+        "timeout_seconds": 1800
       }
     },
-    "created_at": "2026-09-08T08:24:29Z",
+    "created_at": "2026-09-08T09:37:35Z",
     "definitions": [
       {
-        "definition": "The problem identified by the Project Problem Key and cited source URLs; not yet an admitted mathematical statement.",
-        "term": "draft bounty target"
+        "definition": "Definitions, initialization, asymptotic meaning, and computational model are those explicitly fixed by the cited source; unresolved ambiguity blocks Result admission.",
+        "term": "source-native interpretation"
       }
     ],
     "domain": {
-      "description": "Draft source-native bounty problem intake; exact mathematical domain remains subject to statement-faithfulness review.",
+      "description": "Source-defined mathematical or computational bounty target.",
       "objects": [
-        "objects explicitly named by the cited problem source"
+        "odd positive integer",
+        "random iteration",
+        "almost-sure convergence"
       ]
     },
-    "lifecycle": "draft",
+    "lifecycle": "active",
     "msc": [
-      "00A00"
+      "60J05"
     ],
     "problem_id": "problem:althofer-0",
     "quantifiers": [
       {
-        "domain": "an exact, source-faithful ProblemContract for the cited bounty problem",
-        "kind": "find",
-        "variables": [
-          "reviewed_problem_contract"
-        ]
+        "domain": "the exact source-defined target stated in this contract",
+        "kind": "decide",
+        "variables": []
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-08T08:24:29Z",
-        "source": "Bounty problem source",
+        "retrieved_at": "2026-09-08T09:37:35Z",
+        "source": "Official bounty problem and terms page",
         "source_record_id": "althofer-0",
         "url": "https://althofer.de/collatz-prizes.html"
       },
       {
-        "retrieved_at": "2026-09-08T08:24:29Z",
-        "source": "Vibe Mathing Project #2 bounty intake",
+        "retrieved_at": "2026-09-08T09:37:35Z",
+        "source": "Vibe Mathing Project #2 award record",
         "source_record_id": "althofer-0",
         "url": "https://github.com/users/vibemathing/projects/2"
       }
     ],
     "statement": {
       "language": "en",
-      "text": "Draft bounty intake target(s): Collatz随机±1变体. The exact mathematical statement, quantifiers, definitions, assumptions, and acceptance conditions have not yet been frozen; this draft is not research-admitted.",
+      "text": "Starting from any odd positive integer n, independently at each step choose odd(3n+1) or odd(3n−1), each with probability 1/2, where odd(m) is the odd part of m. Prove that the resulting process reaches 1 with probability 1 for every starting value.",
       "version": 1
     },
-    "title": "Collatz随机±1变体",
-    "updated_at": "2026-09-08T08:24:29Z"
+    "title": "Althöfer Prize 0: stochastic 3n±1 convergence",
+    "updated_at": "2026-09-08T09:37:35Z"
   },
-  "problem_contract_sha256": "d01988d094f596f5f7e98810a60a46634e7f57bc8684d1f095ccf9ffaeb91553"
+  "problem_contract_sha256": "6a09e0e38d9740642925275a0032e4b27111c98c8e092ad78b3fec535e4b9148"
 }
 ```

@@ -1,11 +1,11 @@
 {
   "entries": [
     {
-      "harness_snapshot_sha256": "97fc4a6776d53f003654cc9b981d9b5c685e51e62d45c382701d6c8cd2cdd690",
+      "harness_snapshot_sha256": "60689d2518474ff892ba299efa1caaf632529f4f1486c76741e707234d52e28d",
       "harness_version": "1.2.4",
       "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
       "source_manifest_sha256": "fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3",
-      "tree_sha256": "24db13ab41c179a20f2145d3c9b6716dbd0d0eea3c367bc37d2282827b0370e7"
+      "tree_sha256": "0aaa4c7a6379525713dc152464377be1467d07d3d3a08979191a40e34fc88872"
     }
   ],
   "repository": "vibemathing/problem-althofer-0",
