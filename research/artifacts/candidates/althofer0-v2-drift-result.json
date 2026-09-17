@@ -1,0 +1,13 @@
+{
+ "experiment": "althofer-0 v2 distribution and empirical drift",
+ "seed": 20260916,
+ "v2_plus_samples": 200000,
+ "v2_minus_samples": 200000,
+ "E_v2_plus": 1.996,
+ "E_v2_minus": 2.0032,
+ "theoretical_E_log_drift_per_step": -0.287682,
+ "observed_mean_steps_to_1_from_2^40_scale": 91.59,
+ "note": "E[v2] for 3n±1 with random odd n is exactly 2 in distribution limit (P(v2=k) = 2^-(k) for the minus branch structure differs; measured values inform the drift bound).",
+ "generated_at": "2026-09-17T02:55:14.141480+00:00",
+ "claim_status": "candidate_numeric_check_only"
+}

@@ -1,0 +1,44 @@
+{
+ "experiment": "althofer-0 random-collatz reach-one simulation",
+ "seed": 20260915,
+ "max_steps_per_traj": 200000,
+ "samples_total": 50000,
+ "buckets": {
+  "3-1000": {
+   "samples": 12500,
+   "reached1": 12500,
+   "stuck": 0,
+   "mean_steps": 22.19,
+   "max_steps": 206
+  },
+  "1001-100000": {
+   "samples": 12500,
+   "reached1": 12500,
+   "stuck": 0,
+   "mean_steps": 38.27,
+   "max_steps": 183
+  },
+  "100001-10000000": {
+   "samples": 12500,
+   "reached1": 12500,
+   "stuck": 0,
+   "mean_steps": 54.28,
+   "max_steps": 206
+  },
+  "10000001-1000000000": {
+   "samples": 12500,
+   "reached1": 12500,
+   "stuck": 0,
+   "mean_steps": 70.25,
+   "max_steps": 226
+  }
+ },
+ "global_max_steps": 226,
+ "unreached_within_budget": 0,
+ "failure_samples": [],
+ "python": "3.11",
+ "random_module": "Mersenne Twister",
+ "generated_at": "2026-09-17T02:54:45.817372+00:00",
+ "claim_status": "candidate_numeric_check_only",
+ "note": "Expected log-drift per step is log3 - 2*log2 = log(3/4) < 0, consistent with convergence; finite simulation cannot establish probability-1 claim."
+}
