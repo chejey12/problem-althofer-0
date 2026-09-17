@@ -1,0 +1,103 @@
+{
+ "schema_version": "1.1.0",
+ "channel": "chatgpt-web-github-issue-pr-writer",
+ "repository": "vibemathing/problem-althofer-0",
+ "repository_identity": {
+  "binding_state": "verified",
+  "database_id": 1361064037,
+  "node_id": "R_kgDOUSAwZQ",
+  "default_branch": "main"
+ },
+ "problem_id": "problem:althofer-0",
+ "problem_contract_sha256": "6a09e0e38d9740642925275a0032e4b27111c98c8e092ad78b3fec535e4b9148",
+ "harness_snapshot_sha256": "60689d2518474ff892ba299efa1caaf632529f4f1486c76741e707234d52e28d",
+ "base_revision": "18aad83bb6e38d5333d5bb3ca2353be06d826903",
+ "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+ "attempt_id": "attempt:althofer0-001",
+ "route_id": "route:drift-sim",
+ "graph_id": "graph:althofer0-001-v1",
+ "obligation_id": "obligation:lemma-drift",
+ "generator": {
+  "principal": "chejey12-hermes-agent",
+  "model_label": "hermes-glm-5.3-flash",
+  "model_fingerprint_status": "unverified"
+ },
+ "transport": {
+  "branch": "web/attempt-001-drift-sim",
+  "issue_number": 1,
+  "issue_url": "https://github.com/vibemathing/problem-althofer-0/issues/1",
+  "pull_request_number": null,
+  "pull_request_url": null
+ },
+ "objective": "Bounded numeric evidence for lemma-drift: empirical v2 distribution and reach-one simulation; candidate-only.",
+ "candidate_artifacts": [
+  {
+   "candidate_id": "candidate:reach1-sim",
+   "kind": "computation",
+   "locator": "research/artifacts/candidates/althofer0-reach1-sim.py",
+   "sha256": "361c49ec590ec78325ebeadb4c8c6bd417dca9ceddeab38aa277d63fc52bf4a3"
+  },
+  {
+   "candidate_id": "candidate:reach1-sim-result",
+   "kind": "computation",
+   "locator": "research/artifacts/candidates/althofer0-reach1-sim-result.json",
+   "sha256": "a056a581ea3342a2ede39793442c10a87448acc88af46859d8a18ddea8d95d4c"
+  },
+  {
+   "candidate_id": "candidate:v2-drift",
+   "kind": "computation",
+   "locator": "research/artifacts/candidates/althofer0-v2-drift.py",
+   "sha256": "e96aca027911e1e3b9f1b370ce743402cfefee43512a50ded010acd9a355ee37"
+  },
+  {
+   "candidate_id": "candidate:v2-drift-result",
+   "kind": "computation",
+   "locator": "research/artifacts/candidates/althofer0-v2-drift-result.json",
+   "sha256": "5327e0f6bc8daa610e7a8e705a319eaa0ff2438ab7110102338abbb8152af8da"
+  }
+ ],
+ "atomic_claims": [
+  {
+   "claim_id": "claim:reach1-50k",
+   "text": "In 50000 seeded random trajectories (odd n up to 10^9, step budget 200000), every trajectory reached 1 (max 226 steps).",
+   "status": "candidate"
+  },
+  {
+   "claim_id": "claim:v2-drift",
+   "text": "Empirical E[v2] of odd(3n+1) and odd(3n-1) over random odd n is approximately 2.0, giving expected per-step log-drift log(3/4) < 0.",
+   "status": "candidate"
+  }
+ ],
+ "assumptions": [
+  "Random source: Python 3.11 Mersenne Twister, seeds 20260915/20260916",
+  "Step budget 200000 per trajectory bounds the claim to that horizon"
+ ],
+ "risks": [
+  "Finite simulation cannot establish probability-1 convergence",
+  "Model-generated code, not independently verified"
+ ],
+ "open_obligations": [
+  "obligation:root"
+ ],
+ "failed_route_proposal": null,
+ "source_refs": [
+  {
+   "repository": "vibemathing/problem-althofer-0",
+   "path": "problem-library/records/canonical-problems.jsonl",
+   "revision": "18aad83bb6e38d5333d5bb3ca2353be06d826903",
+   "relation": "exact"
+  },
+  {
+   "repository": "external",
+   "path": "althofer.de/collatz-prizes.html",
+   "revision": "retrieved-2026-09-08",
+   "relation": "prior_art"
+  }
+ ],
+ "requested_verification": [
+  "numeric_check",
+  "statement_faithfulness"
+ ],
+ "verdict": "candidate_only",
+ "created_at": "2026-09-17T03:10:00Z"
+}

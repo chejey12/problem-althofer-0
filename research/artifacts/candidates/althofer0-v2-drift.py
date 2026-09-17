@@ -72,7 +72,7 @@ def main():
     }
     out = json.dumps(summary, ensure_ascii=False, indent=1)
     print(out)
-    with open('/tmp/althofer0_exp2.json', 'w') as f:
+    with open("althofer0_exp2.json", "w") as f:
         f.write(out)
 
 
